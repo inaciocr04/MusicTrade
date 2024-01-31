@@ -1,0 +1,20 @@
+{% extends "base.twig" %}
+
+{% block main %}
+
+      <form action="index.php?page=utilisateur&action=create" method ="post">
+    <div class="formulaire flex">
+      <label for="Pseudo">Nom</label>
+    <input id="Pseudo" name="Pseudo"></input>
+  <label for="mail">mail</label>
+    <input id="mail" name="mail"></input>
+      <label for="Mot_de_passe"> Mots de passe</label>
+    <input id="Mot_de_passe" name="Mot_de_passe"></input>
+</div>
+
+<button class="btn-20" type="submit"><span>inscription</span></button>
+
+</form>
+
+
+{% endblock main %}

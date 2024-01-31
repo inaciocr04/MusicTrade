@@ -1,0 +1,16 @@
+{% extends "base.twig" %}
+
+{% block main %}
+			<div class="contenu">
+				<h1>Bienvenue, {{ Pseudo }} !</h1>
+				<p>{{ mail }}</p>
+				<a href="index_utilisateur.php?page=utilisateur&action=edit">
+				<button>modifier votre profil</button>
+				</a>
+			</div>
+			<div class="contenu">
+				<a href="index_utilisateur.php?page=partition&action=afficheform">Créer une partition</a>
+			</div>
+
+{% endblock main %}
+

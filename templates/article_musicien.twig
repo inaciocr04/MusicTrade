@@ -1,0 +1,16 @@
+{% extends "base.twig" %}
+
+{% block main %}
+
+		{% for partition in partitions %}
+			<div class="contenu">
+				<h1>{{ partition.titre }}</h1>
+				<p>{{ partition.description }}</p>
+				<img src="{{ partition.image }}" alt="">
+				<button><a href="musicien.php?page=partition&action=edit&id={{ partition.id }}">modifier</a></button>
+				<button><a href="musicien.php?page=partition&action=delete&id={{ partition.id }}">Supprimer</a></button> 
+			</div>
+		{% endfor %}
+
+{% endblock main %}
+

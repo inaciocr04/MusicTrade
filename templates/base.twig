@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test Info</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul class="flex">
+    <!--<li><a href="index.php?page=tous&action=read">Utilisateur</a></li>
+    <li><a href="">Musicien</a></li>
+    <li><a href="">Admin</a></li>-->
+    <li><a href="index.php">Accueil</a></li>
+    <li><a href="index_utilisateur.php?page=partition&action=read">Partition</a></li>
+    <li><a href="">Cours de musique</a></li>
+    <li><a href="index.php?page=tous&action=afficheProfil">Tous les profils</a></li>
+     </ul>
+    </nav>
+   <!--<nav>
+    <ul class="flex">
+      
+    <!--<li><a href="musicien.php?page=partition&action=read">Musicien</a></li>
+    <li><a href="index.php?page=musicien&action=read"> compte Musicien</a></li>
+    <li><a href="index_utilisateur.php?page=utilisateur&action=read">Utilisateur</a></li>
+    <li><a href="musicien.php?page=partition&action=afficheform">Ajouter une partition</a></li>
+    {% if Pseudo is defined %}
+                <li>Bienvenue, {{ Pseudo }}</li>
+                <li><a href="index_utilisateur.php">Accueil</a></li>
+                <li><a href="index_utilisateur.php?page=partition&action=read">Partition</a></li>
+                <li><a href="">Cours de musique</a></li>
+                <li><a href="index_utilisateur.php?page=utilisateur&action=read">Mon profil</a></li>
+                <li><a href="index.php?page=utilisateur&action=deco">Déconnexion</a></li>
+      {% elseif Prenom is defined %}
+                <li>Bienvenue, {{ Prenom }}</li>
+                <li><a href="index_musicien.php">Accueil</a></li>
+                <li><a href="index_musicien.php?page=musicien&action=read">Partition</a></li>
+                <li><a href="">Cours de musique</a></li>
+                <li><a href="index_musicien.php?page=musicien&action=read">Mon profil</a></li>
+                <li><a href="index.php?page=musicien&action=deco">Déconnexion</a></li>
+      {% else %}
+      <li><a href="index.php">Accueil</a></li>
+                <li><a href="index.php?page=partition&action=read">Partition</a></li>
+                <li><a href="">Cours de musique</a></li>
+      <li> <a href="index.php?page=utilisateur&action=conn">Se connecter</a></li>
+      <li> <a href="index.php?page=musicien&action=conn">Se connecter musicien</a></li>
+      <li><a href="index.php?page=utilisateur&action=afficheform">S'inscrire</a></li>
+      <li><a href="index.php?page=musicien&action=afficheform">S'inscrire musicien</a></li>
+
+      {% endif %}    
+      </ul>
+    </nav>-->
+    <main>
+    <header>
+
+    </header>
+    {% block main %}
+
+    {% endblock main %}
+
+</form>
+</main>
+    <script src="../script.js"></script>
+  </body>
+</html>

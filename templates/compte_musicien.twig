@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+
+{% block main %}
+
+    <h1>connection musicien</h1>
+    <form action="index.php?page=musicien&action=conn" method="post">
+        <div class="formulaire flex">
+            <input type="text" id="Prenom" name="Prenom">
+            <input type="text" id="mail" name="mail">
+            <input type="password" id="Mot_de_passe" name="Mot_de_passe">
+            <input type="submit" name="connexion">
+        </div>
+    </form>
+{% endblock main %}

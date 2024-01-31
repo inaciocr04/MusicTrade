@@ -1,0 +1,53 @@
+{% extends "base.twig" %} {% set currentPage = 'accueil' %} 
+
+{% block nav %}
+<nav>
+  <ul>
+                <li><a href="index_utilisateur.php">Accueil</a></li>
+                <li><a href="index_utilisateur.php?page=partition&action=read">Partition</a></li>
+                <li><a href="">Cours de musique</a></li>
+                <li><a href="index_utilisateur.php?page=utilisateur&action=read">Mon profil</a></li>
+                <li><a href="index.php?page=utilisateur&action=deco">Déconnexion</a></li>
+                </ul>
+</nav>
+{% endblock nav %}
+
+{% block main %}
+<section>
+  <article class="flex">
+    <div class="gauche">
+      <img
+	  src="images/Mozart-decouverte-d-une-nouvelle-partition.webp"
+	  alt=""
+      />
+    </div>
+    <div class="droite">
+      <h1>Nos partitions</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, omnis
+        expedita at maiores hic distinctio ut nemo explicabo saepe veniam rerum
+        eius nihil eveniet, optio quam culpa, ipsam aperiam perferendis.
+      </p>
+      <a href="index_utilisateur.php?page=partition&action=read">Voir plus</a>
+    </div>
+  </article>
+  <article class="flex">
+    <div class="gauche">
+      <h1>Nos partitions</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, omnis
+        expedita at maiores hic distinctio ut nemo explicabo saepe veniam rerum
+        eius nihil eveniet, optio quam culpa, ipsam aperiam perferendis.
+      </p>
+      <a href="#">Voir plus</a>
+    </div>
+	<div class="droite">
+		<img
+		  src="images/Sans titre.jpg"
+		  alt=""
+		/>
+	  </div>
+  </article>
+</section>
+
+{% endblock main %}

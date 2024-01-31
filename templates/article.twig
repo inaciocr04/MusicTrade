@@ -1,0 +1,15 @@
+{% extends "base.twig" %}
+
+{% block main %}
+			<h1>Tous les partitions</h1>
+		{% for partition in partitions %}
+			<div class="contenu">
+				<h1>{{ partition.titre }}</h1>
+				<p>{{ partition.description }}</p>
+				<img src="{{ partition.image }}" alt="">
+				<p>Mise en ligne part : "{{ partition.Pseudo}}"</p>
+			</div>
+		{% endfor %}
+
+{% endblock main %}
+

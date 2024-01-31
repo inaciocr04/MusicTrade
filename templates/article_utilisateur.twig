@@ -1,0 +1,18 @@
+{% extends "base.twig" %}
+
+{% block main %}
+
+		{% for partition in partitions %}
+			<div class="contenu">
+				<h1>{{ partition.titre }}</h1>
+				<p>{{ partition.description }}</p>
+				<img src="{{ partition.image }}" alt="">
+				<p>Mise en ligne part : "{{ partition.Pseudo}}"</p>
+				<a href="pdf.php?id={{ partition.id }}" download="{{ partition.document }}">
+				<button>télécharger la partition</button>
+				</a>
+			</div>
+		{% endfor %}
+
+{% endblock main %}
+

@@ -1,0 +1,27 @@
+{% extends "ajout-partition.twig" %} {% block main %}
+<h2>Vous pouvez éditer cette element :</h2>
+<form action="musicien.php?page=partition&action=update" method="post">
+  <input value="{{ partition.id }}" type="hidden"  name="id" />
+    <div class="formulaire">
+      <label class="balise" for="balise">Mettez le titre de votre partition</label>
+      <input type="text" id="titre" name="titre" value="{{ partition.titre }}">
+    </div>
+    <div class="formulaire flex">
+      <label for="description">Votre description de partition</label>
+      <textarea id="description" name="description">{{ partition.description}}</textarea>
+    </div>
+    <div class="formulaire flex">
+      <label for="image">Lien de votre image de partition</label>
+      <textarea id="image" name="image">{{ partition.image}}</textarea>
+    </div>
+    <div class="formulaire flex">
+      <label id="document" name="document" > Nom de votre document :{{ partition.document }}</label>
+    </div>
+    <div>
+                <label for="document">Sélectionnez un nouveau PDF :</label>
+        <input type="file" name="document" id="docuement" accept=".pdf" value="{{partition.document}}">
+    </div>
+<button class="btn-20" type="submit"><span>Modifier</span></button>
+<button class="btn-20" type="submit" onclick="history.back()"><span>Annuler</span></button>
+</form>
+{% endblock main %}
